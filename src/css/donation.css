@@ -10,9 +10,6 @@ body {
 }
 
 main{
-    background-image: url(src/img/londrinaDonation.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     border-top: 5px solid #007BFF;
     border-bottom: 5px solid #007BFF;
