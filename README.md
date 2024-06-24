@@ -16,4 +16,4 @@
 + COdigo limpo e Rafatorado;
 + Design simples; 
 
-<h2>Link do Projeto: https://t4goz2005.github.io/Landing-Page-XPTO/</h2>
+<h2>Link do Projeto:https://t4goz2005.github.io/ShoreHelpin/index.html</h2>
