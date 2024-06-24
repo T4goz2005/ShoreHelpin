@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#footer{
+    background-color: #fFF;
+}
+
+main{
+    background-image: url(/src/img/londrinaDonation.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 5px solid #007BFF;
+    border-bottom: 5px solid #007BFF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #3b5998;
+}
+
+.qr-code-section {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 40px;
+}
+
+.qr-code-section img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pix-email {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.donation-types {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.donation-types h1 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.donation-item {
+    margin-bottom: 20px;
+}
+
+.donation-item h2 {
+    color: #0056b3;
+}
+
+.donation-item p {
+    text-align: justify;
+}
+
+.donation-note {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+}
+
+.rodape .redes-sociais a {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 20px;
+    border: 3px solid #010101;
+    border-radius: 50%;
+    color: #010101;
+    padding: 10px;
+    width: 30px;
+    transition: 0.3s ease-in-out;
+    height: 30px;
+    align-items: center;
+}

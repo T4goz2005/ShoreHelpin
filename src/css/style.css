@@ -1,0 +1,479 @@
+/*Css Globals*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Outfit:wght@300&family=Public+Sans&display=swap");
+
+body {
+  font-family: "Public Sans", Courier, monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Css Globals*/
+
+/*Logotype Title*/
+
+.logo .imagem {
+  width: 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.logo .titulo {
+  margin-left: 7px;
+  font-size: 20px;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.logo .titulo:hover {
+  color: #BADCFF;
+}
+
+/*Logotype Title*/
+
+/*Header*/
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/*Header*/
+
+/*Header items*/
+
+.cabecalho .navegacao .menu {
+  display: flex;
+}
+
+.cabecalho .navegacao .menu .item {
+  margin: 10px;
+  transition: all 0.3 ease-in-out;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cabecalho .navegacao .menu a {
+  padding: 15px;
+  transition: 0.3s ease;
+  border-radius: 20px;
+}
+
+.cabecalho .navegacao .menu a:hover {
+  content: '';
+  background-color: #2941AB;
+  color: #fff;
+  border-radius: 20px;
+  transform: scale(1);
+}
+
+/*Header items*/
+
+/* main content and slider */
+
+.conteudo-principal .paineis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  position: relative;
+  text-align: center;
+}
+
+.conteudo-principal .paineis .imagem-painel {
+  background-image: url(/src/img/pexels-photo-8602177.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(70%);
+
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.conteudo-principal .paineis{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* 
+.conteudo-principal .paineis .projeto1 {
+  background-image: url("/src/img/painel1.jpg");
+}
+
+.conteudo-principal .paineis .projeto2 {
+  background-image: url("src/img/painel2.jpg");
+}
+
+.conteudo-principal .paineis .projeto3 {
+  background-image: url("src/img/painel3.jpg");
+} */
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+  opacity: 1;
+} 
+
+.conteudo-principal .paineis .titulo {
+  font-weight: bold;
+  font-size: calc(1em + 1vw);
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fefefe;
+}
+
+.conteudo-principal .paineis .titulo span {
+  color: #BADCFF;
+}
+
+.conteudo-principal .paineis .seta {
+  background-image: url("/src/img/seta.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+  left: 20px;
+  transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar {
+  right: 20px;
+}
+
+/* main content and slider */
+
+/* who we are */
+
+.quem-somos {
+  background-color: #2941ab;
+  display: flex;
+  align-items: center;
+  border-top: 10px solid #ffff;
+  border-bottom: 10px solid #ffff;
+}
+
+.quem-somos .conteudo {
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.quem-somos .conteudo .informacao {
+  width: 40%;
+}
+
+.quem-somos .conteudo .imagem {
+  width: 60%;
+}
+
+.quem-somos .conteudo .informacao .titulo {
+  font-size: 50px;
+  color: #DAECFF;
+  margin-bottom: 20px;
+}
+
+.quem-somos .conteudo .informacao .texto {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* who we are */
+
+/* Check List*/
+
+section.checklist {
+  display: flex;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+section.checklist .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 100px;
+  min-height: 600px;
+  z-index: 2;
+  background-color: #2941AB;
+  border-left: 10px solid #fff;
+}
+
+section.checklist .titulo h2 {
+  font-family: "Public Sans";
+  font-size: clamp(2.5rem, 1vw, 4rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #DAECFF;
+  margin-bottom: 20px;
+}
+
+section.checklist .titulo h2 span {
+  color: red;
+}
+
+section.checklist .titulo .item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+section.checklist .titulo .item img {
+  width: 100%;
+  max-width: 25px;
+  margin: 0 10px 0 0;
+}
+
+section.checklist .titulo p {
+  font-family: 'Public Sans';
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: #ccc;
+  line-height: 1.5;
+}
+
+section.checklist .titulo a {
+  font-family: 'Public Sans';
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  color: #120101;
+  background-color: #DAECFF;
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin: 4% 0 0 0;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.checklist .titulo a:hover {
+  background-color: #fff;
+}
+
+section.checklist .imagem {
+  width: 50%;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Check List*/
+
+
+/* Footer */
+
+.rodape {
+  padding: 45px 0 20px 0;
+}
+
+
+.rodape .navegacao {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rodape .navegacao .logo span {
+  font-size: 25px;
+  border-bottom: 1px solid #0f0e0e;
+}
+
+.rodape .redes-sociais {
+  display: flex;
+}
+
+.rodape .redes-sociais a {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  font-size: 20px;
+  border: 3px solid #010101;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.rodape .redes-sociais a:hover {
+  background-color: #DAECFF;
+}
+
+.rodape .navegacao .logo .imagem {
+  width: 140px;
+}
+
+.rodape .copyright {
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* Footer */
+
+
+
+
+
+
+/* Responsive and Midia query*/
+
+@media (max-width: 624px) {
+  .cabecalho {
+    justify-content: center;
+  }
+
+  .cabecalho .logo {
+    margin-bottom: 30px;
+  }
+
+  .cabecalho .menu .item a {
+    font-size: calc(0.6em + 1vw);
+  }
+}
+
+@media (max-width: 900px) {
+  .conteudo-principal .paineis {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .quem-somos .conteudo {
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 30px;
+  }
+
+  .quem-somos .conteudo .imagem {
+    width: 60%;
+    display: none;
+  }
+}
+
+@media (max-width: 940px) {
+  .rodape .navegacao {
+    justify-content: center;
+  }
+
+  .rodape .navegacao .logo {
+    margin-bottom: 30px;
+  }
+
+  .rodape .navegacao .logo,
+  .rodape .navegacao .redes-sociais {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Responsive */
+
+
+/*Card qrcode*/
+
+.container-card{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-card h1{
+  color: #3b5998;
+  margin: 30px;
+}
+
+.card {
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: .3s ease-in-out;
+}
+
+.card:hover{
+  background-color: #BADCFF;
+  cursor: pointer;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #3b5998;
+  margin-bottom: 15px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3b5998;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2e456b;
+}
+/*Card qrcode*/
